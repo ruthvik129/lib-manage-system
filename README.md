@@ -22,6 +22,13 @@ Create a Virtual Environment with python3
   pip install -r requirements.txt
   </code>
   
+  
+  For migrating the intial databases
+  
+  <code>python manage.py migrate</code>
+  
+  <code>python manage.py makemigrations</code>
+  
   Running the application
   <code>
  python manage.py runserver
