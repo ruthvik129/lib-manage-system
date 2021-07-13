@@ -5,7 +5,7 @@ from .models import *
 class BooksSerializer(serializers.ModelSerializer):
     class Meta:
         model = BooksMaster
-        fields = ['name', 'author',]
+        fields = ['id' , 'name', 'author','price']
 
 
 
@@ -14,7 +14,7 @@ class InventorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = InventoryMaster
-        fields = ['copies_available' , 'books']
+        fields = ['id' , 'copies_available' , 'books']
 
 
 class IssuesSerializer(serializers.ModelSerializer):
